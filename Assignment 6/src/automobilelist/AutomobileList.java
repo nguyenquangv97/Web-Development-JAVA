@@ -1,6 +1,8 @@
 package automobilelist;
 
 import java.io.IOException;
+import client.*;
+import adapter.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,16 +20,25 @@ public class AutomobileList extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		return;
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
+		// come here after landing page. purpose is to get a list of available automobile
+		// and return to the client
+
+		// creating a client interface 
+		AutoClientable client = new BuildAuto();
+		// start the client 
+		client.startClient("10.44.3.26", 4500);
+		
+		
+		
+		
 	}
 
 }

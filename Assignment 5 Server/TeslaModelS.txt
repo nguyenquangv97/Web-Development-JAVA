@@ -1,0 +1,27 @@
+Tesla. Model S (Long Range).2019. 76250
+5
+#Color
+5
+Solid Black. 0
+Midnight Silver Metallic. 1500
+Deep Blue Metallic. 1500
+Pearl White Multi-Coat. 2000
+Red Multi-Coat. 2500
+#Wheel
+3
+19" Silver Wheels. 0
+19" Sonic Carbon Slipstream Wheels. 1500
+21" Sonic Carbon Twin Turbine Wheels. 4500
+#Premium Interior
+3
+All Black. 0
+Black and White. 1500
+Cream. 1500
+#Autopilot
+2
+Present. 3000
+Not Present. 0
+#Full Self-Driving Capability
+2
+Present. 5000
+Not Present. 0

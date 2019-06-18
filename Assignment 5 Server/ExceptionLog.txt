@@ -1,0 +1,87 @@
+2019-05-07 10:47:03.284 Error Code: 101 Error Message: Name and price not found
+2019-05-07 10:47:17.687 Error Code: 102 Error Message: missing option set size
+2019-05-07 10:56:10.283 Error Code: 101 Error Message: Name and price not found
+2019-05-07 10:56:35.863 Error Code: 102 Error Message: missing option set size
+2019-05-07 10:58:57.459 Error Code: 101 Error Message: Name and price not found
+2019-05-07 10:59:08.664 Error Code: 102 Error Message: missing option set size
+2019-05-07 11:00:44.582 Error Code: 101 Error Message: Name and price not found
+2019-05-07 11:00:59.924 Error Code: 102 Error Message: missing option set size
+2019-05-07 11:11:56.221 Error Code: 1 Error Message: IOException
+2019-05-07 11:45:56.107 Error Code: 101 Error Message: Name and price not found
+2019-05-07 11:46:06.577 Error Code: 102 Error Message: missing option set size
+2019-05-07 11:47:04.099 Error Code: 101 Error Message: Name and price not found
+2019-05-07 11:47:08.663 Error Code: 102 Error Message: missing option set size
+2019-05-07 11:52:15.645 Error Code: 101 Error Message: Name and price not found
+2019-05-07 11:52:30.278 Error Code: 102 Error Message: missing option set size
+2019-05-07 11:52:31.897 Error Code: 103 Error Message: missing option size
+2019-05-07 12:04:03.386 Error Code: 101 Error Message: Name and price not found
+2019-05-07 12:04:15.463 Error Code: 102 Error Message: missing option set size
+2019-05-07 12:04:18.168 Error Code: 103 Error Message: missing option size
+2019-05-07 14:00:05.393 Error Code: 101 Error Message: Name and price not found
+2019-05-07 14:00:19.235 Error Code: 102 Error Message: missing option set size
+2019-05-07 14:00:22.0 Error Code: 103 Error Message: missing option size
+2019-05-07 14:03:49.205 Error Code: 101 Error Message: Name and price not found
+2019-05-07 14:03:59.763 Error Code: 102 Error Message: missing option set size
+2019-05-07 14:04:02.154 Error Code: 103 Error Message: missing option size
+2019-05-07 14:05:14.002 Error Code: 101 Error Message: Name and price not found
+2019-05-07 14:05:27.374 Error Code: 102 Error Message: missing option set size
+2019-05-07 14:07:51.855 Error Code: 101 Error Message: Name and price not found
+2019-05-07 14:08:07.427 Error Code: 102 Error Message: missing option set size
+2019-05-07 14:08:08.65 Error Code: 103 Error Message: missing option size
+2019-05-07 14:13:21.06 Error Code: 101 Error Message: Name and price not found
+2019-05-07 14:13:38.265 Error Code: 102 Error Message: missing option set size
+2019-05-07 14:13:39.699 Error Code: 103 Error Message: missing option size
+2019-05-07 14:14:13.822 Error Code: 101 Error Message: Name and price not found
+2019-05-07 14:14:25.46 Error Code: 102 Error Message: missing option set size
+2019-05-07 14:14:26.835 Error Code: 103 Error Message: missing option size
+2019-05-07 14:15:54.743 Error Code: 101 Error Message: Name and price not found
+2019-05-07 14:16:06.237 Error Code: 102 Error Message: missing option set size
+2019-05-07 14:16:07.439 Error Code: 103 Error Message: missing option size
+2019-05-07 14:16:56.478 Error Code: 101 Error Message: Name and price not found
+2019-05-07 14:17:12.321 Error Code: 102 Error Message: missing option set size
+2019-05-07 14:17:16.028 Error Code: 103 Error Message: missing option size
+2019-05-08 11:47:52.543 Error Code: 101 Error Message: Name and price not found
+2019-05-08 11:48:15.763 Error Code: 101 Error Message: Name and price not found
+2019-05-08 11:48:27.249 Error Code: 102 Error Message: missing option set size
+2019-05-08 11:48:29.218 Error Code: 103 Error Message: missing option size
+2019-05-08 11:48:55.785 Error Code: 101 Error Message: Name and price not found
+2019-05-08 11:49:06.309 Error Code: 102 Error Message: missing option set size
+2019-05-08 11:49:07.406 Error Code: 103 Error Message: missing option size
+2019-05-08 12:05:40.856 Error Code: 101 Error Message: Name and price not found
+2019-05-08 12:05:50.456 Error Code: 102 Error Message: missing option set size
+2019-05-08 12:05:52.029 Error Code: 103 Error Message: missing option size
+2019-05-08 12:10:09.226 Error Code: 101 Error Message: Name and price not found
+2019-05-08 12:10:19.721 Error Code: 102 Error Message: missing option set size
+2019-05-08 12:10:20.661 Error Code: 103 Error Message: missing option size
+2019-05-08 12:24:38.705 Error Code: 101 Error Message: Name and price not found
+2019-05-08 12:24:53.472 Error Code: 102 Error Message: missing option set size
+2019-05-08 12:24:54.752 Error Code: 103 Error Message: missing option size
+2019-05-08 12:25:45.458 Error Code: 101 Error Message: Name and price not found
+2019-05-08 12:25:59.433 Error Code: 102 Error Message: missing option set size
+2019-05-08 12:26:00.381 Error Code: 103 Error Message: missing option size
+2019-05-08 12:27:26.306 Error Code: 101 Error Message: Name and price not found
+2019-05-08 12:27:37.512 Error Code: 102 Error Message: missing option set size
+2019-05-08 12:27:38.444 Error Code: 103 Error Message: missing option size
+2019-05-08 12:35:41.631 Error Code: 103 Error Message: missing option size
+2019-05-09 14:32:38.626 Error Code: 1 Error Message: IOException
+2019-05-10 15:54:47.713 Error Code: 101 Error Message: Name and price not found
+2019-05-10 15:56:28.023 Error Code: 101 Error Message: Name and price not found
+2019-05-10 15:56:54.123 Error Code: 101 Error Message: Name and price not found
+2019-05-10 15:57:37.003 Error Code: 101 Error Message: Name and price not found
+2019-05-10 15:57:39.939 Error Code: 101 Error Message: Name and price not found
+2019-05-10 15:57:41.35 Error Code: 101 Error Message: Name and price not found
+2019-05-14 19:47:29.023 Error Code: 1 Error Message: IOException
+2019-05-14 19:47:51.153 Error Code: 1 Error Message: IOException
+2019-05-14 19:48:59.966 Error Code: 1 Error Message: IOException
+2019-05-14 19:49:12.842 Error Code: 1 Error Message: IOException
+2019-05-14 19:49:32.919 Error Code: 1 Error Message: IOException
+2019-05-14 19:49:54.482 Error Code: 1 Error Message: IOException
+2019-05-14 19:57:13.278 Error Code: 1 Error Message: IOException
+2019-05-14 20:34:03.601 Error Code: 1 Error Message: IOException
+2019-06-06 10:08:52.209 Error Code: 1 Error Message: IOException
+2019-06-06 10:09:55.208 Error Code: 1 Error Message: IOException
+2019-06-06 10:13:22.719 Error Code: 1 Error Message: IOException
+2019-06-06 10:14:54.396 Error Code: 1 Error Message: IOException
+2019-06-06 14:41:52.129 Error Code: 1 Error Message: IOException
+2019-06-06 14:47:36.797 Error Code: 1 Error Message: IOException
+2019-06-06 14:49:08.418 Error Code: 1 Error Message: IOException

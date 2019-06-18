@@ -1,0 +1,24 @@
+Tesla. Model 3 (Long Range).2019. 38950
+5
+#Color
+5
+Solid Black. 0
+Midnight Silver Metallic. 1000
+Deep Blue Metallic. 1000
+Pearl White Multi-Coat. 1500
+Red Multi-Coat. 2000
+#Wheel
+2
+18" Aero Wheels. 0
+19" Sport Wheels. 1500
+#Premium Interior
+3
+All Black. 0
+Black and White. 1000
+#Autopilot
+1
+Present. 0
+#Full Self-Driving Capability
+2
+Present. 6000
+Not Present. 0

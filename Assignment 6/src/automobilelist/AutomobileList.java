@@ -29,8 +29,9 @@ public class AutomobileList extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 		// come here after landing page. purpose is to get a list of available automobile
-		// and return to the client
-
+		// and return to the user
+		
+		// purpose of this servlet is to interact with the client program from Assignment 5
 		// creating a client interface 
 		AutoClientable client = new BuildAuto();
 		// start the client 

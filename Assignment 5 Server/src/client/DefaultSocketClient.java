@@ -16,6 +16,9 @@ public class DefaultSocketClient extends Thread implements Debuggable {
 	private SelectCarOptions clientProtocol;
 	
 	
+	
+	
+	
 	// constructor
 	
 	public DefaultSocketClient(String strHost, int iPort) {

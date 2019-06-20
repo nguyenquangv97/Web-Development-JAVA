@@ -65,7 +65,7 @@ public class BuildCarModelOptions extends ProxyAutomobile {
 			output = "Upload a file to create an Automobile";
 		} else if (i == 2) {
 			this.state = REQUEST_CONFIGURE_AUTO;
-			output = "Select an Automobile from the following list to configure: \n" + super.getAllModels();
+			output = /*"Select an Automobile from the following list to configure: \n" + */super.getAllModels();
 		} else {
 			output = "Invalid request";
 		}

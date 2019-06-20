@@ -19,7 +19,6 @@ public class BuildCarModelOptions extends ProxyAutomobile {
 	public BuildCarModelOptions() {
 
 	}
-
 	// instance methods
 	// process the request of the client according to the state
 	public Object processRequest(Object obj) {

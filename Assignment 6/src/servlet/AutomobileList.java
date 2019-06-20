@@ -1,4 +1,4 @@
-package automobilelist;
+package servlet;
 
 import java.io.*;
 import java.net.*;
@@ -34,28 +34,29 @@ public class AutomobileList extends HttpServlet {
 		doGet(request, response);
 		// come here after landing page. purpose is to get a list of available automobile
 		// and return to the user
+		
+
+		ObjectOutputStream out; 
+		ObjectInputStream in; 
+
+
 		response.getWriter().println("<h1>INSIDE AUTOLIST</h1>");
+		try {
+			Socket clientSocket = new Socket("10.44.3.26", 4500);
 
-		InputHelper helper = new InputHelper();
-		helper.setToServer(2);
-		WebClientSocket client = new WebClientSocket(helper);
-		client.establishConnection();
-		System.out.println(client.getListFromServer());
-		
-		
-		
-
-		
-		
-		
+			out = new ObjectOutputStream(clientSocket.getOutputStream());
+			in = new ObjectInputStream(clientSocket.getInputStream());	
+			in.readObject();
+			out.writeObject(2);
+			System.out.println(in.readObject().toString());
+			
+			
+		} catch(IOException e) {
+			System.err.println("Error obtaining I/O for connection to host ... ");
+			System.exit(1);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	
-	
-	public Socket createSocket () throws IOException {
-		Socket clientSocket = new Socket("10.44.3.26", 4500);
-		System.out.println("Socket created on port " + 4500);
-		return clientSocket;
-	}
-
-
 }

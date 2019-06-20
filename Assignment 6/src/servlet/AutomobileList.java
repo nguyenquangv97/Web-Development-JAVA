@@ -39,7 +39,6 @@ public class AutomobileList extends HttpServlet {
 		ObjectOutputStream out; 
 		ObjectInputStream in; 
 
-
 		response.getWriter().println("<h1>INSIDE AUTOLIST</h1>");
 		try {
 			Socket clientSocket = new Socket("10.44.3.26", 4500);

@@ -58,20 +58,15 @@ class WebClientSocket implements adapter.Debuggable {
 				
 				System.out.println("Response to server: ");
 		
-				toServer = helper.getToServer();
-		
-				
+				toServer = helper.getToServer();	
 				
 				sendOutput(toServer);
 				System.out.println("sent!");
-				
-
-				
+								
 				System.out.println(fromServer.toString());
 
 				if(DEBUG) 
 					System.out.println("Sending " + toServer + " to server ... ");
-
 			}
 			if(DEBUG)
 				System.out.println("Closing client input stream ... ");

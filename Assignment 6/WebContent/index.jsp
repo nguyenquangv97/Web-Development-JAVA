@@ -23,7 +23,7 @@
                     <hr>
                     <form action="AutomobileList" method="POST">
                     	<button class="btn-primary btn-lg">Get Started!</button>
-                    </form>
+                    </form>	
                 </div>
             </div>
         </div>

@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import model.Automobile;
 import client.CarModelOptionsIO;
@@ -38,16 +39,24 @@ public class AutomobileList extends HttpServlet {
 
 		ObjectOutputStream out; 
 		ObjectInputStream in; 
-
-		response.getWriter().println("<h1>INSIDE AUTOLIST</h1>");
+		Socket clientSocket = new Socket("10.44.3.26", 4500);
+		String carList = "";
+		HttpSession session = request.getSession();
 		try {
-			Socket clientSocket = new Socket("10.44.3.26", 4500);
+			clientSocket = new Socket("10.44.3.26", 4500);
 
 			out = new ObjectOutputStream(clientSocket.getOutputStream());
 			in = new ObjectInputStream(clientSocket.getInputStream());	
+			
 			in.readObject();
 			out.writeObject(2);
-			System.out.println(in.readObject().toString());
+			
+			
+			carList = in.readObject().toString();
+			
+			session.setAttribute("inputStream", in);
+			session.setAttribute("outputStream", out);
+			session.setAttribute("CarList", carList);
 			
 			
 		} catch(IOException e) {
@@ -57,5 +66,9 @@ public class AutomobileList extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+
+		
+		response.sendRedirect("CarList.jsp");
 	}
 }

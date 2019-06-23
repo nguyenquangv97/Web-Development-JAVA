@@ -8,7 +8,7 @@ public class SelectCarOptions {
 	// constructors
 	public SelectCarOptions() {}
 	// instance methods 
-	// configure auto will received the automobileo object and 
+	// configure auto will received the automobile object and 
 	// insert it into the linkedHashmap of the user!!
 	// when inserting, the auto object property of the Proxy will be set 
 	// use the Choice interface to configure the car. 

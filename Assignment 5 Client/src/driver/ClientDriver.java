@@ -8,6 +8,6 @@ public class ClientDriver {
 		// creating a client interface 
 		AutoClientable client = new BuildAuto();
 		// start the client 
-		client.startClient("10.44.3.26", 4500);
+		client.startClient("192.168.1.78", 4500);
 	}
 }

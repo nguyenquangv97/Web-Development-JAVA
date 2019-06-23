@@ -3,6 +3,10 @@ import java.io.*;
 import java.util.*;
 
 public class Automobile implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private float basePrice;
 
@@ -102,6 +106,15 @@ public class Automobile implements Serializable {
 		}
 		return "";
 	}
+	
+	public String getChoiceName(int indexOptionSet) {
+		return this.choices.get(indexOptionSet).getName();
+	}
+	
+	public float getChoicePrice(int indexOptionSet) {
+		return this.choices.get(indexOptionSet).getPrice();
+	}
+	
 
 	// get Option Choice price
 	public float getOptionChoicePrice(String setName) {
@@ -360,6 +373,21 @@ public class Automobile implements Serializable {
 		for(Option opt : this.opset.get(index).getOpt()) {
 			System.out.print(opt.printOption());
 		}
+	}
+	
+	public String getOpsetName(int index) {
+		return this.opset.get(index).getName();
+	}
+	
+	public String [] getEachOptionProps(int index) {
+		int i = 0;
+		String [] arrOption = new String[this.getOpset().get(index).getOpt().size()];
+		for(Option opt : this.opset.get(index).getOpt())
+		{
+			arrOption[i] = new String(opt.getName() + ", $" + opt.getPrice());
+			i++;
+		}
+		return arrOption;
 	}
 	
 }

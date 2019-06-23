@@ -6,4 +6,6 @@ public interface Choice {
 	public String getOptionChoice(String setName);
 	public void setOptionChoice(String setName, String optionName);
 	public float getTotalPrice();
+	public String getChoiceName(int indexOptionSet);
+	public float getChoicePrice(int indexOptionSet);
 }

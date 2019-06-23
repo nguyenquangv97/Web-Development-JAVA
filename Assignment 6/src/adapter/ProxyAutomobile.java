@@ -121,9 +121,19 @@ public abstract class ProxyAutomobile implements FixInterface {
 	public String getOptionChoice(String setName) {
 		return ProxyAutomobile.car.getOptionChoice(setName);
 	}
+	
+	public String getChoiceName(int indexOptionSet) {
+		return ProxyAutomobile.car.getChoiceName(indexOptionSet);
+	}
+	
+	public float getChoicePrice(int indexOptionSet) {
+		return ProxyAutomobile.car.getChoicePrice(indexOptionSet);
+	}
+	
 	public float getTotalPrice() {
 		return ProxyAutomobile.car.getTotalPrice();
 	}
+	
 
 	@Override
 	public String fixError() {

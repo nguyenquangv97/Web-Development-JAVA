@@ -9,13 +9,17 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.Automobile;
+
+import adapter.BuildAuto;
+import adapter.Choice;
+import adapter.CreateAuto;
+import model.*;
 
 /**
  * Servlet implementation class CarConfiguration
  */
 @WebServlet("/Configuration")
-public class CarConfiguration extends HttpServlet {
+public class CarConfiguration extends HttpServlet implements Interactionable {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -26,23 +30,46 @@ public class CarConfiguration extends HttpServlet {
 		ObjectInputStream in = (ObjectInputStream) request.getSession().getAttribute("inputStream");
 		String carName = request.getParameter("selection");
 		
-		Automobile car = null;
+		sendRequest(out, carName);
+			
+		Automobile car = (Automobile) retrieveObject(in);
 		
-		out.writeObject(carName);
+		System.out.println(car);	// print to the console to debug (making sure the car is what the user wants)
+		
+		CreateAuto createAuto = new BuildAuto();
+		createAuto.insertAutoLinkedHashMap(car);
+		Choice carChoice = new BuildAuto();
+		
+		request.getSession().setAttribute("carChoice", carChoice);
+		
+		request.getSession().setAttribute("automobile", car);
+		
+
+		response.sendRedirect("Configuration.jsp");
+	}
+	@Override 
+	public void sendRequest(ObjectOutputStream out, Object togo) {
+		try {
+			out.writeObject(togo);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.err.println("Error Sending Object");
+		}
+	}
+
+	@Override
+	public Object retrieveObject(ObjectInputStream in) {
+		Automobile car = null;
 		try {
 			car = (Automobile) in.readObject();
 
 		} catch(ClassNotFoundException e) {
-			System.out.println("Error in downloaded object");
+			System.err.println("Error in downloaded object");
+		} catch (IOException e) {
+			System.out.println("Error reading object!");
 		}
-		
-		request.getSession().setAttribute("automobile", car);
-		
-		System.out.println(car);
-		
-		response.sendRedirect("Configuration.jsp");
-		
-		System.out.println(carName);
+		return car;
 	}
+	
 
 }

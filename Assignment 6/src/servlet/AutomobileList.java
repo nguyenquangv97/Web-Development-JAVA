@@ -18,7 +18,7 @@ import client.SelectCarOptions;
  * Servlet implementation class AutomobileList
  */
 @WebServlet("/AutomobileList")
-public class AutomobileList extends HttpServlet {
+public class AutomobileList extends HttpServlet implements Interactionable{
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -39,20 +39,21 @@ public class AutomobileList extends HttpServlet {
 
 		ObjectOutputStream out; 
 		ObjectInputStream in; 
-		Socket clientSocket = new Socket("10.44.3.26", 4500);
+		Socket clientSocket;
 		String carList = "";
 		HttpSession session = request.getSession();
 		try {
-			clientSocket = new Socket("10.44.3.26", 4500);
+			clientSocket = new Socket("192.168.1.78", 4500);
 
 			out = new ObjectOutputStream(clientSocket.getOutputStream());
 			in = new ObjectInputStream(clientSocket.getInputStream());	
 			
-			in.readObject();
-			out.writeObject(2);
+			retrieveObject(in);
+			sendRequest(out, 2);
 			
 			
-			carList = in.readObject().toString();
+			carList = retrieveObject(in).toString();
+			
 			
 			session.setAttribute("inputStream", in);
 			session.setAttribute("outputStream", out);
@@ -62,13 +63,29 @@ public class AutomobileList extends HttpServlet {
 		} catch(IOException e) {
 			System.err.println("Error obtaining I/O for connection to host ... ");
 			System.exit(1);
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 		
-
-		
 		response.sendRedirect("CarList.jsp");
+	}
+
+	@Override
+	public Object retrieveObject(ObjectInputStream in) {
+		Object returned = null;
+		try {
+			returned = in.readObject();
+		} catch (ClassNotFoundException | IOException e) {
+			// TODO Auto-generated catch block
+			System.err.println("Error reading object");
+		}
+		return returned;
+	}
+
+	@Override
+	public void sendRequest(ObjectOutputStream out, Object togo) {
+		try {
+			out.writeObject(togo);
+		} catch (IOException e) {
+			System.err.println("Error sending request");
+		}		
 	}
 }

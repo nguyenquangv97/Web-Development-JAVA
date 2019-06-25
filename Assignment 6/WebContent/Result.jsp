@@ -22,10 +22,19 @@
       <th scope="col">Price</th>
     </tr>
   </thead>
+  
 <%
 Automobile car = (Automobile) request.getSession().getAttribute("automobile");
-Choice carChoice = (Choice) request.getSession().getAttribute("carChoice");
-
+Choice carChoice = (Choice) request.getSession().getAttribute("carChoice"); 
+%>
+	<tbody>
+	    <tr>
+	      <th scope="row">Vehicle Name</th>
+	      <td><%= car.getName() %></td>
+	      <td>$<%= car.getBasePrice() %></td>
+	    </tr>
+  	</tbody>
+<% 
 for(int i = 0; i < car.getOpset().size(); i++) { %>
 	<tbody>
 	    <tr>
@@ -37,7 +46,7 @@ for(int i = 0; i < car.getOpset().size(); i++) { %>
 <% } %>
 <tbody>
     <tr>
-      <th scope="col">Total Price:</th>
+      <th scope="col">Total Price</th>
       <td scope="row"></td>
       <td scope="row">$<%= car.getTotalPrice()%></td>
       </tr>
@@ -64,8 +73,5 @@ for(int i = 0; i < car.getOpset().size(); i++) { %>
 		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
-
-
-
 </body>
 </html>

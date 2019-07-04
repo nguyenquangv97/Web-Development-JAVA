@@ -5,3 +5,6 @@ Running instruction:
 3. from the Client side, Enter 1 to upload the to the Server. 
 4. Enter the name of the files given. Ex: "TeslaModelS.txt" or "TeslaMode3Performance.props"
 5. After uploading the file, press 0 to close the connection between the client and the server. The server should still be running. 
+6. Install Tomcat 7.0
+7. Run Tomcat (port 8080) is the default port that Tomcat uses. 
+8. After Tomcat server is started, run Assignment 6 > src > 
